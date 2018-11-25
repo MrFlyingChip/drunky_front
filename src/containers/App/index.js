@@ -2,13 +2,24 @@ import React, { Component } from 'react';
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import * as AdminActions from '../../actions/AdminActions';
-import DrinksList from "../DrinksList";
+import * as UserActions from '../../actions/UserActions';
+import Header from "../../components/Header";
+import './styles.css';
+import Footer from "../../components/Footer";
 
 class App extends Component {
+    componentDidMount(){
+        this.props.actions.checkCookies();
+    }
+
   render() {
     return (
       <div className="App">
-        <DrinksList/>
+          <Header/>
+          <main>
+              {this.props.children}
+          </main>
+          <Footer/>
       </div>
     );
   }
@@ -16,13 +27,14 @@ class App extends Component {
 
 function mapStateToProps(state) {
     return {
-        admin: state.admin
+        admin: state.admin,
+        user: state.user
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators({...AdminActions}, dispatch)
+        actions: bindActionCreators({...AdminActions, ...UserActions}, dispatch)
     }
 }
 

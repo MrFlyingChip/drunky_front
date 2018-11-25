@@ -27,6 +27,7 @@ import {
 } from "../constants/Admin";
 import fetch from 'cross-fetch'
 import {API_PATH} from "../constants/Drunky";
+import {browserHistory} from 'react-router';
 
 export function fetchAllProducts(product) {
     return (dispatch) => {

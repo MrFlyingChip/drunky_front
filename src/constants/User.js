@@ -1,0 +1,12 @@
+export const CHECK_COOKIES = 'CHECK_COOKIES';
+export const LOG_IN = 'LOG_IN';
+export const SIGN_UP = 'SIGN_UP';
+export const LOGOUT = 'LOGOUT';
+export const LIKE_PRODUCT = 'LIKE_PRODUCT';
+export const UNLIKE_PRODUCT = 'UNLIKE_PRODUCT';
+export const ADD_TO_FAVOURITES = 'ADD_TO_FAVOURITES';
+export const REMOVE_FROM_FAVOURITES = 'REMOVE_FROM_FAVOURITES';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+export const UPDATE_COMMENT = 'UPDATE_COMMENT';
+export const FETCH_USER_DATA = 'FETCH_USER_DATA';
