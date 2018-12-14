@@ -11,7 +11,7 @@ body{
 }
 
 body{
-    margin: 0px;
+    margin: 0;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -30,6 +30,19 @@ main{
     font-size: 24pt;
 }
 
+.header-text-18pt{
+    font-size: 18pt;
+}
+
 .column{
     display: inline-block;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-50{
+    width: 48%;
 }

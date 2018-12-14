@@ -1,0 +1,50 @@
+.form-login-header{
+    font: 16pt bolder;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.input-field-form-login{
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px;
+    font: 12pt italic;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px black solid;
+}
+
+.input-field-form-login:active{
+    border: 2px #87433c solid;
+}
+
+.input-field-form-login:focus{
+    border: 2px #87433c solid;
+    outline: none;
+}
+
+.form-login{
+    display: block;
+}
+
+.button-form-login{
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px;
+    font: 12pt italic;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    width: 100px;
+    outline: none;
+}
+
+.button-form-login:hover{
+    background-color: #87433c;
+}
+
+.button-form-login:active{
+    color: #A4A4A4;
+}
+

@@ -72,6 +72,7 @@ export function logIn(payload) {
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify(payload));
         let result = JSON.parse(xhr.response);
+        console.log(result);
         if (!result.error) {
             browserHistory.push('/');
             window.localStorage.setItem('rr_username', result.username);

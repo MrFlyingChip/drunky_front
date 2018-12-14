@@ -35,7 +35,6 @@ export function fetchAllProducts(product) {
         fetch(API_PATH + 'admin/products/' + product)
             .then(res => res.json())
             .then(value => {
-                console.log(value);
                 dispatch(finishRequest(FETCH_ALL_PRODUCTS, false, value));
             })
             .catch(error => {
